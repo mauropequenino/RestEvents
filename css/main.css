@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+header {
+  background-image: url("../img/img_3.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+}
+
+header .nav img {
+  width: 50px;
+  height: 50px;
+}
+
+header .nav .filter-svg {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+header .nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .nav nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-size: 16px;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .nav nav ul li a:hover {
+  color: #283618;
+}
+
+header .call-to-action {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+header .call-to-action h2 {
+  text-transform: capitalize;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1;
+  color: #fff;
+}
+
+header .call-to-action p {
+  margin: 20px 0;
+  color: whitesmoke;
+}
+
+header .call-to-action .button-cta {
+  text-decoration: none;
+  background-color: #606c38;
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .call-to-action .button-cta:hover {
+  background-color: #283618;
+}
+
+.section-sobre {
+  padding: 70px 0;
+}
+
+.section-sobre .sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.section-sobre .sobre .sobre-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-sobre .sobre .sobre-left img {
+  width: 320px;
+  height: 480px;
+}
+
+.section-sobre .sobre .sobre-right {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.section-sobre .sobre .sobre-right h2 {
+  font-weight: 600;
+  color: #283618;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.section-sobre .sobre .sobre-right h2::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: #283618;
+  position: absolute;
+  display: block;
+  left: 60.6em;
+}
+
+.section-sobre .sobre p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

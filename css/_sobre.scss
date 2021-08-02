@@ -1,0 +1,45 @@
+.section-sobre {
+    padding: 70px 0;
+
+    .sobre {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px ;
+
+        .sobre-left{
+            display: flex;
+            img {
+                width: 320px;
+                height: 480px;
+            }
+        }
+
+        .sobre-right {
+            width: 50%;
+            padding: 0 20px;
+        
+            h2{
+                font-weight: 600;
+                color: #283618;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+
+                &::after{
+                    content: '';
+                    width: 50px;
+                    height: 2px;
+                    background-color: #283618;
+                    position: absolute;
+                    display: block;
+                    left: 60.6em;
+
+                }
+            }
+        }
+        p{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+}
