@@ -1,0 +1,101 @@
+.section-parceria{
+    padding: 100px 10px;
+    background-color: $dark-olive-green;
+
+    .parcerias {
+        display: flex;
+        flex: wrap;
+
+        .parcerias-texto {
+            width: 40%;
+            h2{
+                font-weight: 600;
+                font-size: 42px;
+                color: #fff;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+            }
+            p {
+                color: #fff;
+            }
+        }  
+    
+        .parcerias-logo{
+            width: 60%;
+
+            .parcerias-sponsor {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                .img-logos {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    margin: 0 10px 20px;
+                    padding: 15px 40px;
+                    display: inline-block;
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media (max-width: 920px){
+    .section-parceria {
+        .parcerias {
+            .parcerias-texto {
+                h2 {
+                    font-size: 36px;
+                }
+            }
+            .parcerias-logo{
+                .parcerias-sponsor {
+                    .img-logos {
+                        margin: 0 10px 20px;
+                        padding: 10px 40px;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 790px) {
+    .section-parceria {
+        padding-left: 40px;
+        padding-right: 40px;
+        .parcerias {
+            flex-direction: column;
+
+            .parcerias-texto {
+                width: 100%;
+                text-align: center;
+                h2 {
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+            .parcerias-logo {
+                width: 100%;
+                margin-top: 60px;
+
+                .parcerias-sponsor {
+                    justify-content: center;
+                }
+            }
+        }
+    }  
+}

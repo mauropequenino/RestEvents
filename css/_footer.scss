@@ -1,0 +1,114 @@
+.footer {
+    padding: 70px 0;
+    margin-top: 50px;
+    background-color: #222;
+
+
+    .footer-content {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 80px;
+        
+
+        .title {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .cta {
+            width: 50%;
+            padding: 30px 0 20px;
+            display: inline-block;
+            justify-content: center;
+            
+            h4 {
+                font-size: 24px;
+                text-transform: capitalize;
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.5;
+                padding: 40px 0;
+            }
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-weight: bold;
+                background-color: #fff;
+                color: #6B7797;
+                padding: 15px 30px;
+                border-radius: 50px;
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    background-color: $liver-dogs;
+                    color: #fff;
+                }
+        
+            }
+        }
+    }
+
+    .subfooter {
+        border-top: 1px solid #ecf4fb21;
+        display: flex;
+        place-content: space-between;
+        font-size: 14px;
+        color: #ECF4FB;
+        padding: 20px 0 30px;
+        margin: 0 20px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li a {
+                text-decoration: none;
+                color: #ECF4FB;
+                text-transform: capitalize;
+                margin-right: 20px;
+                transition: all 0.2s ease 0s;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+        
+        .social-links a{
+            font-size: 20px;
+            color: #ECF4FB;
+            margin: 0 10px;
+            transition: all 0.3s ease 0s;    
+
+            &:hover {
+                color: $liver-dogs;  
+            }
+        }
+    }
+    
+    .copyright {
+        font-size: 14px;
+        text-align: center;
+        color: #ECF4FB;
+        
+    }
+}
+
+//responsive
+
+@media (max-width: 797px) {
+   .subfooter {
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       margin: 0 20px;
+
+       .social-links {
+           margin-top: 40px;
+       }
+   } 
+}
+

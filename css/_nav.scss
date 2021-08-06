@@ -1,3 +1,8 @@
+//----------------------------------------
+//         NAV    
+//---------------------------------------
+
+
 header {
   background-image: url('../img/img_3.jpg');
   background-size: cover;
@@ -34,7 +39,7 @@ header {
         transition: all 0.3s ease;
 
         &:hover{
-          color: #283618;
+          color: $dark-olive-green;
         }
       }
     }
@@ -62,7 +67,7 @@ header {
 
     .button-cta {
       text-decoration: none;
-      background-color: #606c38;
+      background-color: $dark-olive-green;
       border-radius: 8px;
       padding: 12px 24px;
       display: inline-block;
@@ -71,12 +76,43 @@ header {
       transition: all 0.3s ease;
 
       &:hover{
-        background-color: #283618;
+        background-color: $kombu-green;
       }
     }
   }
 }
 
 @media (max-width: 797px)  {
-  
+  header {
+    .nav {
+      nav ul {
+        display: none; 
+      }
+    }
+
+    .call-to-action {
+      top: 0;
+      margin-top: 50px;
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 15px;
+      }
+
+      .button-cta {
+        font-size: 15px;
+      }
+    }
+  }
 }
+
+@media (max-width: 500px) {
+  header {
+    .call-to-action {
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+} 
