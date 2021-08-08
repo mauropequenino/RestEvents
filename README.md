@@ -77,4 +77,4 @@ Serao feitas, as seguintes atividades:
 - SASS
 - JAVASCRIPT
 
-### Abra e confira <a href="">Rest Eventos</a>
+### Abra e confira <a href="https://antonio-sitoe.github.io/RestEvents/">Rest Eventos</a>
