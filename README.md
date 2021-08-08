@@ -63,12 +63,12 @@ Serão feitas, as seguintes actividades:
 
 Nesta etapa, usando a linguagem javascript, para dar efeitos no site.
 Serao feitas, as seguintes atividades:
-- [] refatorar o codigo.
-- [] deploy.
+- [x] refatorar o codigo.
+- [x] deploy.
 
 - Dias: sexta e sabado ;
 - Pessoal: Antonio Sitoe;
-- Tempo:
+- Tempo:30 minutos
 
 # TECNOLOGIAS USADAS
 
