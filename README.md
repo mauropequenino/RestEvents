@@ -15,7 +15,7 @@ Landing page, com o objectivo de mostrar os serviços de um salão de eventos.
 
 # Etapas para a criação da landing page / divisões de actividades
 
-## 1. wireframe e design dos componentes (básico)
+## 1. Wireframe e design dos componentes (básico)
 
 Esta etapa e crucial, onde vamos fazer a definição da ux e ui, fazer o desenho do site
 e colocar em disposição as cores, tipografias e os componentes. Com foco em proporcionar melhores
