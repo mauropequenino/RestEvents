@@ -1,0 +1,121 @@
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: whitesmoke, $alpha: 1);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 4rem;
+
+  span {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 1rem 2rem;
+    background-color: whitesmoke;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 4px 0 rgba(0, 0, 0, 0.12),
+      0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    border: 0.6rem solid #b9b8b8;
+    max-width: 900px;
+    width: 100%;
+    margin-right: 1rem;
+    animation: fade-up 0.6s forwards;
+  }
+  .modalGalery {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    img {
+      border: none;
+      margin: 0;
+    }
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .imageModal {
+      max-width: 600px;
+      width: 100%;
+      animation: fade-up 0.6s forwards;
+      height: 250px;
+    }
+    .modalGalery {
+      position: relative;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      display: flex;
+      align-items: center;
+      height: 200px;
+      img {
+        border: none;
+        margin: 1rem;
+        width: 100%;
+        height: 150px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  .modal {
+    height: 120vh;
+
+    .imageModal {
+      max-width: 280px;
+      width: 100%;
+      animation: fade-up 0.6s forwards;
+      height: 200px;
+    }
+    .modalGalery {
+      position: relative;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      display: flex;
+      align-items: center;
+      height: 200px;
+      img {
+        border: none;
+        margin: 1rem;
+        width: 100%;
+        height: 150px;
+      }
+    }
+  }
+}

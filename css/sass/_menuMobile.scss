@@ -1,0 +1,82 @@
+/* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
+.open-main-nav {
+  display: none;
+  position: absolute;
+  top: 30px;
+  padding-top: 20px;
+  right: 15px;
+  z-index: 1000;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.open-main-nav:focus {
+  outline: none;
+}
+.burger {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 0 auto;
+  background: $liver-dogs;
+  transform: skew(5deg);
+  transition: all 0.275s;
+}
+
+.burger:after,
+.burger:before {
+  content: "";
+  display: block;
+  height: 100%;
+  background: $liver-dogs;
+  transition: all 0.275s;
+}
+
+.burger:after {
+  transform: translateY(-12px) translateX(-2px) skew(-20deg);
+}
+
+.burger:before {
+  transform: translateY(-16px) skew(-10deg);
+}
+
+/* Toggle State part */
+.is-open .burger {
+  transform: skew(5deg) translateY(-8px) rotate(-45deg);
+}
+
+.is-open .burger:before {
+  transform: translateY(0px) skew(-10deg) rotate(75deg);
+}
+
+.is-open .burger:after {
+  transform: translateY(-12px) translateX(10px) skew(-20deg);
+  opacity: 0;
+}
+
+@media (max-width: 797px) {
+  .nav {
+    .open-main-nav {
+      display: block;
+    }
+
+    nav ul.is-open{
+     opacity: 1;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      text-align: center;
+
+      li {
+        a {
+          color: #252525 !important;
+        }
+      }
+    }
+  }
+}

@@ -24,8 +24,6 @@
         }
     }
     .image-galeria {
-        //border: 1px solid red;
-        //line-height:0;
         -webkit-column-count:4; /* split it into 5 columns */
         -webkit-column-gap:1px; /* give it a 5px gap between columns */
         -moz-column-count:4;
@@ -38,7 +36,7 @@
         margin: 0;
 
         img {
-            width: 100% !important;
+            width: 99% !important;
             height: 220px !important;
             margin-bottom:0px; /* to match column gap */
             filter: grayscale(100%);
